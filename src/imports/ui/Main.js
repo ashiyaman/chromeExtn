@@ -1,5 +1,6 @@
 import Unsplash from 'unsplash-js';
 import React from 'react';
+import Todo from './Todo';
 
 const unsplash = new Unsplash({
         applicationId: "1d5987396c54a3c2807f2c4f3a57648da2c4a70c0961df5b5d4217d9888b683f",
@@ -7,13 +8,15 @@ const unsplash = new Unsplash({
         callbackUrl : "urn:ietf:wg:oauth:2.0:oob"
     });
 
-export default class Background extends React.Component{
+export default class Main extends React.Component{
 
     
 
 render(){
     return(
-        <img src="http://cdn.wonderfulengineering.com/wp-content/uploads/2014/03/high-quality-wallpaper-7.jpg"/>
+        <div>
+        <Todo/>
+        </div>
     );
 }
 }
