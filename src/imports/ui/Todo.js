@@ -18,12 +18,13 @@ export default class extends React.Component{
 
     saveTodo(item){
         console.log(item);
-        this.setState({todoSaved:item});
+        this.setState({todoSaved:item}); //call refs here instead of having 2 setStates
         this.toggleStep();
         //this.setState({currentStep:2})
     }
 
     toggleStep(){
+        console.log("We ran toggleStep here");
         if (this.state.currentStep === 1){
         this.setState({currentStep:2});
         }
@@ -51,3 +52,5 @@ export default class extends React.Component{
         ); 
     }
 };
+
+//Use switch router to render different components

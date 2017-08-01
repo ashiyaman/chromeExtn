@@ -1,6 +1,7 @@
 import Unsplash from 'unsplash-js';
 import React from 'react';
 import Todo from './Todo';
+import QuoteBox from './QuoteBox';
 import CurrentTime from './DisplayTime';
 
 const unsplash = new Unsplash({
@@ -17,6 +18,7 @@ render(){
         <div>
           <CurrentTime />
           <Todo/>
+          <QuoteBox/>
         </div>
     );
 }

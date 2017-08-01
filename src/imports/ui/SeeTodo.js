@@ -27,6 +27,9 @@ const styles = {
     fill:"#FFFFFF",
     display:"inline",
     float:"left"
+  },
+  parent:{
+    display:"flex",
   }
 };
 class SeeTodo extends React.Component{
@@ -47,13 +50,14 @@ class SeeTodo extends React.Component{
   }
 
   btnTapped(){
-    //this.props.doneTodo();
-    alert("remove todo button tapped")
+    //alert("remove todo button tapped");
+    this.props.doneTodo();
   }
 
 render(){
   
   return(
+    <div className={styles.parent}>
     <div style={styles.block}>
     <h1>TODAY</h1>
     <Checkbox
@@ -64,9 +68,10 @@ render(){
       onCheck={this.checkedBox}
       
     />
-    <IconButton onClick={this.btnTapped} iconStyle={styles.iconStyle}>
+    <IconButton onClick={()=>this.btnTapped()} iconStyle={styles.iStyle}>
       <ContentAdd />
     </IconButton>
+    </div>
     
 
     </div>   
