@@ -15,10 +15,20 @@ export default class Main extends React.Component{
 
 render(){
     return(
-        <div>
-          <CurrentTime />
-          <Todo/>
-          <QuoteBox/>
+        <div className="container">
+          <div className="space-between">
+            <div>Links</div>
+            <div>Weather</div>
+          </div>
+          <div>
+            <CurrentTime />
+            <Todo/>
+          </div>
+          <div className="space-between">
+            <div>Settings</div>
+            <QuoteBox/>
+            <div>Todo List</div>
+          </div>
         </div>
     );
 }
