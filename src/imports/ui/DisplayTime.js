@@ -1,12 +1,5 @@
 import React from 'react';
 
-const styles = {
-  font: {
-    fontSize: "20vh",
-    fontWeight: "500"
-  }
-}
-
 export default class CurrentTime extends React.Component {
   constructor(props) {
     super(props);
@@ -26,7 +19,7 @@ export default class CurrentTime extends React.Component {
 
   render() {
     return(
-      <div  style={styles.font}>{this.state.currentTime}</div>
+      <div className="time">{this.state.currentTime}</div>
     )
   }
 }
