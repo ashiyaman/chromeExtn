@@ -3,6 +3,7 @@ import React from 'react';
 import Todo from './Todo';
 import QuoteBox from './QuoteBox';
 import CurrentTime from './DisplayTime';
+import Weather from './Weather';
 
 const unsplash = new Unsplash({
         applicationId: "1d5987396c54a3c2807f2c4f3a57648da2c4a70c0961df5b5d4217d9888b683f",
@@ -18,7 +19,7 @@ render(){
         <div className="container">
           <div className="space-between">
             <div>Links</div>
-            <div>Weather</div>
+            <Weather />
           </div>
           <div>
             <CurrentTime />
