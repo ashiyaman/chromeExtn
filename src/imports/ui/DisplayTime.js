@@ -1,4 +1,4 @@
-import React from 'react';
+var React = require('react');
 
 export default class CurrentTime extends React.Component {
   constructor(props) {
